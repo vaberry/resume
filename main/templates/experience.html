@@ -8,8 +8,16 @@
             </button>
         </h2>
         <div class="accordion-collapse collapse" id="experienceData" data-bs-parent="#resumeAccordion">
-            <div class="accordion-body ps-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, itaque! Quam nobis quos accusantium, beatae sint natus in veniam ad?
+            <div class="accordion-body">
+
+                <div class="accordion accordion-flush" id="experienceAccordion">
+                    {% include 'experiences/altamira.html' %}
+                    {% include 'experiences/deloitte.html' %}
+                    {% include 'experiences/booz.html' %}
+                    {% include 'experiences/jnj.html' %}
+                    {% include 'experiences/af.html' %}
+                </div>
+
             </div>
         </div>
     </div>

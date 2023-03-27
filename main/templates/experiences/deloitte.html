@@ -1,0 +1,27 @@
+{% load static %}
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="deloitteHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deloitte" aria-expanded="false" aria-controls="deloitte">
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex">
+              <img id="experience-logo" class="align-self-center me-3" src="{% static 'main/img/deloitte.png' %}" alt="">
+              <h5>
+                Deloitte
+                <small class="text-secondary d-block">Senior Consultant</small>
+                <small class="text-secondary d-block">Dec 2020 - May 2022</small>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+
+      </button>
+    </h2>
+    <div id="deloitte" class="accordion-collapse collapse" aria-labelledby="deloitteHeading" data-bs-parent="#experienceAccordion">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+</div>

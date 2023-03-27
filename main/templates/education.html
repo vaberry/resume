@@ -1,5 +1,16 @@
 {% load static %}
 
+<style>
+    #school-card {
+        background-color: black;
+    }
+    #school-logo {
+        width: auto;
+        height: 100px;
+        opacity: .7;
+    }
+</style>
+
 <div class="container-sm">
     <div class="accordion-item">
         <h2 class="accordion-header">
@@ -8,8 +19,38 @@
             </button>
         </h2>
         <div class="accordion-collapse collapse" id="educationData" data-bs-parent="#resumeAccordion">
-            <div class="accordion-body ps-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, itaque! Quam nobis quos accusantium, beatae sint natus in veniam ad?
+            <div class="accordion-body">
+                <div class="container-sm">
+                    <div class="row">
+                        <div id="school-card" class="col card text-center">
+                            <img id="school-logo" src="{% static 'main/img/syracuse.png' %}" alt="" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Syracuse University
+                                </h5>
+                                <hr>
+                                <h6 class="card-subtitle text-secondary">
+                                    Bachelor of Arts, Sociology
+                                </h6>
+                                <p class="card-text text-secondary">2007 - 2011</p>
+                            </div>
+                        </div>
+
+                        <div id="school-card" class="col card text-center">
+                            <img id="school-logo" src="{% static 'main/img/indiana.png' %}" alt="" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Indiana University
+                                </h5>
+                                <hr>
+                                <h6 class="card-subtitle text-secondary">
+                                    Master of Business Administration
+                                </h6>
+                                <p class="card-text text-secondary">2015 - 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
