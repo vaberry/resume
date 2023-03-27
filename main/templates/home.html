@@ -3,8 +3,11 @@
 
 {% block content %}
 <div class="container-sm">
-    <div class="accordion accordion-flush">
-        <h1>check</h1>
+    <div class="accordion accordion-flush" id="resumeAccordion">
+        {% include 'portfolio.html' %}
+        {% include 'experience.html' %}
+        {% include 'education.html' %}
+        {% include 'contact.html' %}
     </div>
 </div>
 
