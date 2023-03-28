@@ -1,7 +1,11 @@
 {% load static %}
 
+<style>
+    #contactLinks {
+        background: none !important;
+        border: none !important;
+    }
 </style>
-
 <div class="container">
     <div class="row">
 
@@ -13,13 +17,29 @@
             <h3 class="h3 mb-3">
                 Vince Berry
             </h3>
+            <div class="text-center mt-3 text-secondary mb-3">
+                <a href="mailto:vincent.berry11@gmail.com"><i class="bi bi-envelope-fill text-secondary"></i></a>
+                <span class="tt" data-bs-placement="right" title="Click to copy my email: vincent.berry11@gmail.com">
+                    <button id="contactLinks" onclick="copyEmail()">
+                        <i class="bi bi-clipboard text-secondary" style="font-size: 11px;"></i>
+                    </button>
+                </span>
+
+                &nbsp; | &nbsp;
+                <a href="tel:6103687379"><i class="bi bi-telephone-fill text-secondary"></i></a>
+                <span class="tt" data-bs-placement="right" title="Click to copy my number: 610-368-7379">
+                    <button id="contactLinks" onclick="copyNumber()">
+                        <i class="bi bi-clipboard text-secondary" style="font-size: 11px;"></i>
+                    </button>
+                </span>
+            </div>
             <h5 class="h5 text-secondary mb-3">
                 <i class="bi bi-house-door-fill"></i> Chicago, IL
             </h5>
             <div>
                 <p class="text-secondary">
-                    <i class="bi bi-airplane-engines-fill"></i> Veteran |
-                    <i class="bi bi-mortarboard-fill"></i> MBA |
+                    <i class="bi bi-airplane-engines-fill"></i> Veteran &nbsp;|&nbsp;
+                    <i class="bi bi-mortarboard-fill"></i> MBA &nbsp;|&nbsp;
                     <i class="bi bi-file-earmark-code-fill"></i> Python Nerd
                 </p>
             </div>
@@ -36,8 +56,6 @@
             </div>
         </div>
 
-        <hr class="text-secondary d-md-none">
 
-    
     </div>
 </div>
