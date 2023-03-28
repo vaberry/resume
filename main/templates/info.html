@@ -21,24 +21,22 @@
                 <i class="bi bi-house-door-fill"></i> Chicago, IL
             </h5>
             <div class="text-center mt-3 text-secondary mb-3">
-
                 <h5 class="h5">
                     <a href="mailto:vincent.berry11@gmail.com"><i class="bi bi-envelope-fill text-secondary me-2"></i></a>
                     <span class="tt" data-bs-placement="right" title="Click to copy my email: vincent.berry11@gmail.com">
-                        <button id="contactLinks" onclick="copyEmail()">
+                        <button data-bs-toggle="modal" data-bs-target="#reg-modal" id="contactLinks" onclick="copyEmail()">
                             <i class="bi bi-clipboard text-secondary" style="font-size: 11px;"></i>
                         </button>
                     </span>
     
                     &nbsp; | &nbsp;
                     <a href="tel:6103687379"><i class="bi bi-telephone-fill text-secondary me-2"></i></a>
-                    <span class="tt" data-bs-placement="right" title="Click to copy my number: 610-368-7379">
-                        <button id="contactLinks" onclick="copyNumber()">
+                    <span class="tt" data-bs-placement="right" title="Click to copy number: 610-368-7379">
+                        <button data-bs-toggle="modal" data-bs-target="#reg-modal" id="contactLinks" onclick="copyNumber()">
                             <i class="bi bi-clipboard text-secondary" style="font-size: 11px;"></i>
                         </button>
                     </span>
                 </h5>
-
             </div>
 
             <div>
@@ -62,5 +60,16 @@
         </div>
 
 
+    </div>
+</div>
+
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-black">
+                <h5 class="modal-titale" id="modal-title">Copied to your clipboard!</h5>
+                <button class="btn-close bg-secondary" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
     </div>
 </div>

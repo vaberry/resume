@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load sweetify %}
+{% sweetify %}
 
 {% block content %}
 
@@ -65,6 +67,9 @@
 
 </style>
 
+<script src="alert/dist/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="alert/dist/sweetalert.css">
+
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 px-5 px-md-0 pt-3">
@@ -81,12 +86,15 @@
     </div>
 </div>
 
+
+
+
 <script>
     function copyEmail() {
   
         /* Copy text into clipboard */
-        navigator.clipboard.writeText
-            ("vincent.berry11@gmail.com");
+        navigator.clipboard.writeText("vincent.berry11@gmail.com");
+        // alert("Copied vincent.berry11@gmail.com to your clipboard!");
     }
 
     function copyNumber() {
@@ -95,6 +103,7 @@
         navigator.clipboard.writeText
             ("610-368-7379");
     }
+    
 </script>
 
 {% endblock content %}
