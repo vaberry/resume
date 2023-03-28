@@ -1,0 +1,38 @@
+{% load static %}
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingFamily">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFamily" aria-expanded="true" aria-controls="collapseFamily">
+        Family
+      </button>
+    </h2>
+    <div id="collapseFamily" class="accordion-collapse collapse" aria-labelledby="headingFamily" data-bs-parent="#accordionInterests">
+      <div class="accordion-body">
+
+
+          <div class="photo-gallery">
+              <div class="container">
+                  <div class="row photos">
+                    <div class="col-5 col-md-5 item border border-secondary border-2 mb-2 me-2 ">
+                        <a href="{% static 'main/img/family1.jpg' %}" data-lightbox="photos">
+                            <img class="img-fluid" src="{% static 'main/img/family1.jpg' %}">
+                        </a>
+                    </div>
+                      <div class="col-5 col-md-5 item border border-secondary border-2 mb-2 me-2">
+                        <a href="{% static 'main/img/family2.jpg' %}" data-lightbox="photos">
+                            <img class="img-fluid" src="{% static 'main/img/family2.jpg' %}">
+                        </a>
+                    </div>
+                      <div class="col-5 col-md-5 item border border-secondary border-2 mb-2 me-2">
+                        <a href="{% static 'main/img/family3.jpg' %}" data-lightbox="photos">
+                            <img class="img-fluid" src="{% static 'main/img/family3.jpg' %}">
+                        </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+    </div>
+</div>

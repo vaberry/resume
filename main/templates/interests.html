@@ -1,5 +1,8 @@
 {% load static %}
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
 <div class="container-sm">
     <div class="accordion-item">
         <h2 class="accordion-header">
@@ -9,8 +12,24 @@
         </h2>
         <div class="accordion-collapse collapse" id="interestsData" data-bs-parent="#resumeAccordion">
             <div class="accordion-body">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, itaque! Quam nobis quos accusantium, beatae sint natus in veniam ad?
+
+
+                <div class="accordion" id="accordionInterests">
+                    {% include 'interests/family.html' %}
+                    {% include 'interests/exercise.html' %}
+                    {% include 'interests/sports.html' %}
+                </div>
+
+
+
+
+
             </div>
         </div>
     </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
