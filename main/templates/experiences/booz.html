@@ -1,27 +1,29 @@
 {% load static %}
 
 <div class="accordion-item">
-    <h2 class="accordion-header" id="boozHeading">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#booz" aria-expanded="false" aria-controls="booz">
+  <h2 class="accordion-header" id="boozHeading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#booz" aria-expanded="false" aria-controls="booz">
 
 
-        <div class="container">
-          <div class="row">
-            <div class="col d-flex">
-              <img id="experience-logo" class="align-self-center me-3" src="{% static 'main/img/booz.png' %}" alt="">
-              <h5>
-                Booz Allen Hamilton
-                <small class="text-secondary d-block">Associate</small>
-                <small class="text-secondary d-block">May 2019 - Dec 2020</small>
-              </h5>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex">
+            <img id="experience-logo" class="align-self-center me-3" src="{% static 'main/img/booz.png' %}" alt="">
+            <h5>
+              Booz Allen Hamilton
+              <small class="text-secondary d-block">Associate</small>
+              <small class="text-secondary d-block">May 2019 - Dec 2020</small>
+            </h5>
           </div>
         </div>
+      </div>
 
 
-      </button>
-    </h2>
-    <div id="booz" class="accordion-collapse collapse" aria-labelledby="boozHeading" data-bs-parent="#experienceAccordion">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </button>
+  </h2>
+  <div id="booz" class="accordion-collapse collapse" aria-labelledby="boozHeading" data-bs-parent="#experienceAccordion">
+    <div class="accordion-body text-secondary">
+      I programmed an Earned Value Management system with Python and VBA, which brought together scheduling data (via MS Project) and financial data to analyze project success from both a cost and schedule standpoint; i.e. is the project on budget and on schedule.
     </div>
+  </div>
 </div>
