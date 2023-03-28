@@ -1,5 +1,15 @@
 {% load static %}
 
+<style>
+    .btn {
+        background-color: orange;
+    }
+
+    .btn:hover {
+        color: orangered;
+        border-color: orange;
+    }
+</style>
 <div class="container-sm">
     <div class="accordion-item">
         <h2 class="accordion-header">
@@ -9,7 +19,77 @@
         </h2>
         <div class="accordion-collapse collapse" id="contactData" data-bs-parent="#resumeAccordion">
             <div class="accordion-body">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, itaque! Quam nobis quos accusantium, beatae sint natus in veniam ad?
+                
+                <!-- <div class="container-sm">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div class="col-4">
+                            vincent.berry11@gmail.com
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="col-4">
+                            610-368-7379
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div class="container-sm">
+                    <div class="row">
+                        <div class="col">
+                            <form action="">
+
+                                <label for="name" class="form-label">Name:</label>
+                                <div class="mb-4 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-person-fill"></i>
+                                    </span>
+                                    <input type="text" class="form-control" id="name" placeholder="e.g. Laurie Strode">
+                                </div>
+
+
+                                <label for="email" class="form-label">Email address: </label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="e.g. lauriestrode@example.com">
+                                    
+                                    <!-- <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                            <i class="bi bi-question-circle text-muted"></i>
+                                        </span>
+                                    </span> -->
+                                </div>
+
+                                <div class="form-floating mb-4 mt-5">
+                                    <textarea
+                                        id="query"
+                                        class="form-control" 
+                                        style="height: 140px;"
+                                        >
+                                    </textarea>
+                                    <label class="text-secondary" for="query">What's going on?</label>
+                                </div>
+        
+        
+                                <div class="mb-4 text-center">
+                                    <button class="btn" type="submit">Submit</button>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>

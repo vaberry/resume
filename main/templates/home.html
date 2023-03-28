@@ -4,7 +4,7 @@
 {% block content %}
 
 <style>
-    * {
+    .accordion-item, .accordion-collapse:not(.collapsed) {
         border: none !important;
         border-radius: 0 !important;
         outline: none !important;
@@ -15,6 +15,15 @@
         background-color: black;
     }
 
+    label, input, i {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    }
+
+    input[type=text]:focus, input[type=email]:focus, textarea[id=query]:focus {
+        border-color: orangered;
+        border-width: 3px;
+    }
+    
     .accordion-button:not(.collapsed) {
         color: orangered;
         background-color: black;
@@ -46,6 +55,13 @@
         height: 100px;
         opacity: .7;
     }
+    a {
+        text-decoration: none;
+    }
+
+    .img-thumbnail {
+        width: 100px;
+    }
 
 </style>
 
@@ -55,6 +71,7 @@
             {% include 'info.html' %}
         </div>
         <div class="col accordion accordion-flush pt-md-5" id="resumeAccordion">
+            {% include 'interests.html' %}
             {% include 'technologies.html' %}
             {% include 'portfolio.html' %}
             {% include 'experience.html' %}
